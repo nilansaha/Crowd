@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Crowd</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+  #logo {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 2;
+    color: #f5f6f7;
+    letter-spacing: 2px;
+  }
+
+  #nav {
+    background-color: #103052;
+    width:100%;
+    height: 50px;
+   }
+  </style>
+</head>
+
+<div id="nav">
+</div>
+<div style="position: absolute; top: 4; left: 6;width: 100px;text-align:left;">
+    <p id="logo">CROWD</p>
+</div>
+
+<div class="container" style="width:60%;margin-top:25px;">
+  <form action="/admin" method="post" enctype = "multipart/form-data">
+    <div class="form-group">
+      <label for="task">Task</label>
+      <input class="form-control" type="text" name="task" placeholder="Experiment 1">
+    </div>
+    <div class="form-group">
+      <label for="Question">Question</label>
+      <input class="form-control" type="text" name="question" placeholder="Is this a harrasment tweet ?">
+    </div>
+    <div class="form-group">
+      <label for="Options">Options</label>
+      <input class="form-control" type="text" name="options" placeholder="Yes|No">
+    </div>
+    <div class="form-group">
+      <label for="annotators">Annotators</label>
+      <input class="form-control" type="text" name="annotators" placeholder="Nilan|Rohan|Rahul">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type = "file" name = "file">
+    </div>
+    <button type="submit" class="btn btn-danger"><span class=""></span> Submit</a>
+  </form>
+</div>
+</html>
